@@ -36,7 +36,7 @@ aside {
 
 main {
   overflow: auto;
-  padding: 4rem;
+  padding: 5rem 8.125rem;
   background-color: var(--shape-body);
   border-radius: 0.75rem;
 
