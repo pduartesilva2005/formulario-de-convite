@@ -1,0 +1,7 @@
+#app {
+  display: grid;
+  grid-template-columns: 25rem 51.25rem;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1.25rem;
+}
