@@ -5,6 +5,8 @@
 }
 
 :root {
+  --pink: #ff598b;
+
   --font-logo: "Leckerli One", sans-serif;
   --font-heading: "Baloo 2", sans-serif;
   --font-content: "Open Sans", sans-serif;
