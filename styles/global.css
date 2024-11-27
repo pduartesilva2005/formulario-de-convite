@@ -5,7 +5,15 @@
 }
 
 :root {
+  --purple: #b259ff;
   --pink: #ff598b;
+  --fuschia: #ff59f9;
+  --orange: #ff8b59;
+  --yellow: #ffcd59;
+  --lime: #e1ff59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --navy: #6a59ff;
 
   --font-logo: "Leckerli One", sans-serif;
   --font-heading: "Baloo 2", sans-serif;

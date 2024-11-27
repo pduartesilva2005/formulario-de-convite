@@ -1,4 +1,5 @@
-label + .radio-wrapper {
+label + .radio-wrapper,
+label + .colors-wrapper {
   margin-top: 0.75rem;
 }
 
@@ -61,6 +62,80 @@ label + .radio-wrapper {
 
     & .video-icon {
       background-image: url(../../assets/icons/video-checked.svg);
+    }
+  }
+}
+
+.colors-wrapper {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  gap: 0.75rem;
+
+  .radio-color {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 999px;
+    border: 6px solid var(--shape-button);
+    position: relative;
+
+    &.blue {
+      background-color: var(--brand-light);
+    }
+
+    &.navy {
+      background-color: var(--navy);
+    }
+
+    &.purple {
+      background-color: var(--purple);
+    }
+
+    &.fuschia {
+      background-color: var(--fuschia);
+    }
+
+    &.pink {
+      background-color: var(--pink);
+    }
+
+    &.red {
+      background-color: var(--danger);
+    }
+
+    &.orange {
+      background-color: var(--orange);
+    }
+
+    &.yellow {
+      background-color: var(--yellow);
+    }
+
+    &.lime {
+      background-color: var(--lime);
+    }
+
+    &.green {
+      background-color: var(--green);
+    }
+
+    &.cyan {
+      background-color: var(--cyan);
+    }
+
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    &:hover {
+      border: 6px solid var(--shape-hover);
+    }
+
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
     }
   }
 }
