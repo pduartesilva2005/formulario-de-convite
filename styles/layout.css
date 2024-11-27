@@ -43,4 +43,9 @@ main {
   & .main-container {
     max-width: 51.25rem;
   }
+
+  & h2 {
+    font: var(--text-heading-md);
+    color: var(--text-heading);
+  }
 }

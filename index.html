@@ -36,7 +36,7 @@
                   src="assets/icons/calendar.svg"
                   alt="Ícone de calendário"
                 />
-                Sobre o evento
+                <span>Sobre o evento</span>
               </legend>
 
               <div class="input-wrapper">
@@ -64,16 +64,19 @@
               <div class="flex">
                 <div class="input-wrapper">
                   <label for="type-event">Tipo</label>
-                  <div class="radio-inner">
-                    <div class="radio-image"></div>
-                    <input type="radio" name="type" id="type" />
-                    <label>Presencial</label>
-                  </div>
 
-                  <div class="radio-inner">
-                    <div class="radio-image"></div>
-                    <input type="radio" name="type" id="type" />
-                    <label>Online</label>
+                  <div class="radio-wrapper">
+                    <div class="radio-inner">
+                      <div class="building-icon"></div>
+                      <input type="radio" name="type" id="type" />
+                      <label>Presencial</label>
+                    </div>
+
+                    <div class="radio-inner">
+                      <div class="video-icon"></div>
+                      <input type="radio" name="type" id="type" />
+                      <label>Online</label>
+                    </div>
                   </div>
                 </div>
 
@@ -94,6 +97,8 @@
                   name="description"
                   id="description"
                   placeholder="Escreva sobre os detalhes do evento"
+                  cols="30"
+                  rows="5"
                 ></textarea>
               </div>
             </fieldset>
