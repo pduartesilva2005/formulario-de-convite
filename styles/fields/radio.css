@@ -1,5 +1,6 @@
 label + .radio-wrapper,
-label + .colors-wrapper {
+label + .colors-wrapper,
+label + .theme-wrapper {
   margin-top: 0.75rem;
 }
 
@@ -131,7 +132,53 @@ label + .colors-wrapper {
     }
 
     &:hover {
-      border: 6px solid var(--shape-hover);
+      border-color: var(--shape-hover);
+    }
+
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
+    }
+  }
+}
+
+.theme-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+
+  .theme-radio {
+    background-color: var(--shape-button);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--input-stroke);
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 5rem;
+      object-fit: cover;
+      padding: 0.25rem;
+      border-radius: 0.5rem;
+    }
+
+    label {
+      margin-top: 0;
+      padding-bottom: 0.5rem;
+    }
+
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    &:hover {
+      background-color: var(--shape-hover);
     }
 
     &:has(:checked) {
