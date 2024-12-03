@@ -39,4 +39,8 @@ input[type="date"]:focus-within {
   & .input-wrapper {
     width: 48%;
   }
+
+  & .input-wrapper.flex-2 {
+    width: 25%;
+  }
 }
