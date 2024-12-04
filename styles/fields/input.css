@@ -32,6 +32,30 @@ input[type="date"]:focus-within {
   outline-offset: 0.1px;
 }
 
+input {
+  &:invalid {
+    border: 0.125rem solid var(--danger);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font: var(--text-content-xs);
+    color: var(--danger);
+    margin-top: 0.5rem;
+
+    & img {
+      width: 1rem;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
+
 .flex {
   gap: 1rem;
   align-items: center;

@@ -23,6 +23,7 @@ label + .theme-wrapper {
   gap: 0.5rem;
   padding: 1rem;
   position: relative;
+  cursor: pointer;
 
   .building-icon {
     background-image: url(../../assets/icons/building-2.svg);
@@ -78,6 +79,7 @@ label + .theme-wrapper {
     border-radius: 999px;
     border: 6px solid var(--shape-button);
     position: relative;
+    cursor: pointer;
 
     &.blue {
       background-color: var(--brand-light);
@@ -155,6 +157,7 @@ label + .theme-wrapper {
     gap: 0.5rem;
     border: 1px solid var(--input-stroke);
     position: relative;
+    cursor: pointer;
 
     img {
       width: 100%;

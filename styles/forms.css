@@ -23,7 +23,6 @@ legend {
   & span {
     font: var(--text-heading-sm);
     color: var(--text-heading);
-    line-height: 0;
   }
 }
 
