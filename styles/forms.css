@@ -35,3 +35,9 @@ fieldset + fieldset {
   height: 1px;
   margin-block: 3rem 2.5rem;
 }
+
+.actions-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
