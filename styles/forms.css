@@ -29,3 +29,9 @@ legend {
 fieldset + fieldset {
   margin-top: 3rem;
 }
+
+.separator {
+  border: 1px solid var(--input-stroke);
+  height: 1px;
+  margin-block: 3rem 2.5rem;
+}
